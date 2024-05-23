@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    user-select: none; /* Prevent text selection */
+}
+
+canvas {
+    display: block;
+    background-color: #f0f0f0;
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#clearButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#clearButton:hover {
+    background-color: #ff3b30;
+}
+
+#clearButton:active {
+    transform: translateY(2px);
+}
